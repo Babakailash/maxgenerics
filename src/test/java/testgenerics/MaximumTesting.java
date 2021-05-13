@@ -18,4 +18,11 @@ public class MaximumTesting {
         Integer result = m.maximum(50,55,30);
         Assertions.assertEquals(55,result);
     }
+
+    @Test
+    public void max_third_position() {
+        MaximumMain m = new MaximumMain();
+        Integer result = m.maximum(50,40,80);
+        Assertions.assertEquals(80,result);
+    }
 }
