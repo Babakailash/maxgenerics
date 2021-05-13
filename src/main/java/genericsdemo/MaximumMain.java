@@ -11,12 +11,8 @@ public class MaximumMain {
         if (z.compareTo(max) > 0)
             max = z;
 
-        System.out.println("Maximum Number in (3,4,5) is: ");
+        System.out.println(max);
         return max;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(maximum(3,4,5));
     }
 
 }
