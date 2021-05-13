@@ -19,6 +19,13 @@ public class MaximumTesting {
         Assertions.assertEquals("Peach",result);
     }
 
+    @Test
+    public void max_third_position() {
+        MaximumMain m = new MaximumMain();
+        String result = m.maximum("Apple","Banana","Peach");
+        Assertions.assertEquals("Peach",result);
+    }
+
 
 
 
