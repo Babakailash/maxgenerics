@@ -1,18 +1,22 @@
 package genericsdemo;
 
 public class MaximumMain {
-    public static Float maximum(Float x, Float y, Float z) {
+    public static String maximum(String Apple, String Peach, String Banana) {
 
-        Float max = x;
+        String max = Apple;
 
-        if (y.compareTo(max) > 0)
-            max = y;
+        if (Peach.compareTo(max) > 0)
+            max = Peach;
 
-        if (z.compareTo(max) > 0)
-            max = z;
+        if (Banana.compareTo(max) > 0)
+            max = Banana;
 
         System.out.println(max);
         return max;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(maximum("Peach","Apple","Banana"));
     }
 
 }
