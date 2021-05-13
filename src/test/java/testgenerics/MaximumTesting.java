@@ -67,5 +67,29 @@ public class MaximumTesting {
         Assertions.assertEquals( result, "peach");
     }
 
+    @Test
+    void integer_maximum_mumtiple_values() {
+        MaximumMain m = new MaximumMain();
+        Integer[] ar = {10,15,11,9};
+        Integer result = (Integer)m.pritnMultiple(ar);
+        Assertions.assertEquals( result, 15);
+    }
+
+    @Test
+    void string_maximum_multiple_values() {
+        MaximumMain m = new MaximumMain();
+        String[] ar = {"peach","banana", "apple","mango"};
+        String result = (String)m.pritnMultiple(ar);
+        Assertions.assertEquals( result, "peach");
+    }
+
+    @Test
+    void float_maximum_multiple_values() {
+        MaximumMain m = new MaximumMain();
+        Float[] ar = {10.30f,55.02f,22.44f,23.54f};
+        Float result = (Float) m.pritnMultiple(ar);
+        Assertions.assertEquals( result, 55.02f);
+    }
+
 
 }
