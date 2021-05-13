@@ -8,21 +8,9 @@ public class MaximumTesting {
     @Test
     public void max_first_position() {
         MaximumMain m = new MaximumMain();
-        Integer result = m.maximum(70,50,30);
-        Assertions.assertEquals(70,result);
+        Float result = m.maximum(70.55f,50.50f,30.33f);
+        Assertions.assertEquals(70.55f,result);
     }
 
-    @Test
-    public void max_second_position() {
-        MaximumMain m = new MaximumMain();
-        Integer result = m.maximum(50,55,30);
-        Assertions.assertEquals(55,result);
-    }
 
-    @Test
-    public void max_third_position() {
-        MaximumMain m = new MaximumMain();
-        Integer result = m.maximum(50,40,80);
-        Assertions.assertEquals(80,result);
-    }
 }
