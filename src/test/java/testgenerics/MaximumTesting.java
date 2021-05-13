@@ -12,5 +12,12 @@ public class MaximumTesting {
         Assertions.assertEquals(70.55f,result);
     }
 
+    @Test
+    public void max_second_position() {
+        MaximumMain m = new MaximumMain();
+        Float result = m.maximum(55.25f,55.27f,55.26f);
+        Assertions.assertEquals(55.27f,result);
+    }
+
 
 }
