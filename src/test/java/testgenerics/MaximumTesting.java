@@ -4,29 +4,68 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class MaximumTesting {
-
     @Test
-    public void max_first_position() {
+    void integer_first_position() {
         MaximumMain m = new MaximumMain();
-        String result = m.maximum("Peach","Apple","Banana");
-        Assertions.assertEquals("Peach",result);
+        Integer result = m.printMax(80,70,60);
+        Assertions.assertEquals( result, 80);
     }
 
     @Test
-    public void max_second_position() {
+    void integer_second_position() {
         MaximumMain m = new MaximumMain();
-        String result = m.maximum("Apple","Peach","Banana");
-        Assertions.assertEquals("Peach",result);
+        Integer result = m.printMax(20,50,30);
+        Assertions.assertEquals( result, 50);
     }
 
     @Test
-    public void max_third_position() {
+    void integer_third_position() {
         MaximumMain m = new MaximumMain();
-        String result = m.maximum("Apple","Banana","Peach");
-        Assertions.assertEquals("Peach",result);
+        Integer result = m.printMax(50,60,70);
+        Assertions.assertEquals( result, 70);
     }
 
+    @Test
+    void float_first_position() {
+        MaximumMain m = new MaximumMain();
+        Float result = m.printMax(20.55f,19.55f,19.53f);
+        Assertions.assertEquals( result, 20.55f);
+    }
 
+    @Test
+    void float_second_position() {
+        MaximumMain m = new MaximumMain();
+        Float result = m.printMax(20.55f,20.56f,20.53f);
+        Assertions.assertEquals( result, 20.56f);
+    }
+
+    @Test
+    void float_third_position() {
+        MaximumMain m = new MaximumMain();
+        Float result = m.printMax(20.55f,19.55f,21.52f);
+        Assertions.assertEquals( result, 21.52f);
+    }
+
+    @Test
+    void string_first_position() {
+        MaximumMain m = new MaximumMain();
+        String result = m.printMax("peach","banana","apple");
+        Assertions.assertEquals( result, "peach");
+    }
+
+    @Test
+    void string_second_position() {
+        MaximumMain m = new MaximumMain();
+        String result = m.printMax("banana","peach","apple");
+        Assertions.assertEquals( result, "peach");
+    }
+
+    @Test
+    void string_third_position() {
+        MaximumMain m = new MaximumMain();
+        String result = m.printMax("apple","banana","peach");
+        Assertions.assertEquals( result, "peach");
+    }
 
 
 }
