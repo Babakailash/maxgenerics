@@ -37,8 +37,11 @@ public class MaximumMain < T extends Comparable> {
         if(z.compareTo(max) > 0) {
             max = z;
         }
-        System.out.println("Maximum Element is: " + max );
+        System.out.println("Maximum Value is: " + max );
         return max;
+    }
+    public static <T> void print(T x, T y, T z, T max) {
+        System.out.println("Maximum from Values x = " + x + " y = " + y + " z = " + z + " is = " + max );
     }
 }
 
