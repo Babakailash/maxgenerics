@@ -15,9 +15,5 @@ public class MaximumMain {
         return max;
     }
 
-    public static void main(String[] args) {
-        System.out.println(maximum("Peach","Apple","Banana"));
-    }
-
 }
 
