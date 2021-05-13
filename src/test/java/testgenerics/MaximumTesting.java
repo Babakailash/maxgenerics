@@ -19,5 +19,12 @@ public class MaximumTesting {
         Assertions.assertEquals(55.27f,result);
     }
 
+    @Test
+    public void max_third_position() {
+        MaximumMain m = new MaximumMain();
+        Float result = m.maximum(11.11f,11.12f,11.13f);
+        Assertions.assertEquals(11.13f,result);
+    }
+
 
 }
