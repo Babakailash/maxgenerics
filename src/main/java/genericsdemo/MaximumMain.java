@@ -1,9 +1,9 @@
 package genericsdemo;
 
 public class MaximumMain {
-    public static Integer maximum(Integer x, Integer y, Integer z) {
+    public static Float maximum(Float x, Float y, Float z) {
 
-        Integer max = x;
+        Float max = x;
 
         if (y.compareTo(max) > 0)
             max = y;
@@ -13,6 +13,10 @@ public class MaximumMain {
 
         System.out.println(max);
         return max;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(maximum(2.3f,3.4f,4.88f));
     }
 
 }
